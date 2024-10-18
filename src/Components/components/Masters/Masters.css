@@ -1,0 +1,42 @@
+.UploadExcel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.UploadExcel-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.UploadExcel-btn {
+    background-color: #da531a;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.UploadExcel-input {
+    margin: 10px;
+}
+
+.UploadExcel-heading {
+    color: #da531a;
+}
+
+.reg-input {
+    margin: 2px;
+    padding: 1px;
+}

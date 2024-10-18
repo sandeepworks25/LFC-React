@@ -1,0 +1,320 @@
+/* Main */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color:black;
+  font-weight: 400;
+  background: rgb(234, 234, 234);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.menu {
+  width: 20%;
+  margin: 2% auto;
+  padding: 50px 0;
+  text-align: center;
+  align-items: center;
+  float: left;
+  transition: width 0.3s;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.right-div {
+  width: 80%;
+  float: right;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  padding: 50px 0;
+  background-color: white;
+  height: 100vh;
+}
+
+#toggleButton {
+  position: absolute;
+  left: 17%;
+  top: 7px;
+  background-color:#fe5722;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+}
+
+.menu-logo {
+  width: 100px;
+  margin-bottom: 5%;
+}
+
+
+.heading {
+  color: #fe5722;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.page-header {
+  background-color: #fe5722;
+  height: 40px;
+  position: fixed;
+  width: 80%;
+  top: 5px;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.profile-btn {
+  color: white;
+  position: relative;
+  font-size: 18px;
+  left: 93%;
+  top: -25px;
+}
+
+.data-btn-grp {
+  margin-left: 1%;
+  margin-top: 5%;
+}
+
+.data-btn {
+  background-color: white;
+  color: Black;
+  padding: 5px;
+  border: solid;
+  border-width: 1px;
+}
+
+.data-btn:hover {
+  background-color: #fe5722;
+  color: white;
+}
+
+.data-table {
+  border: 1px solid black;
+  margin-left: 1%;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.data-table thead {
+  background-color: #fe5722;
+  color: white;
+}
+
+.data-table th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-table td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.EventSelect {
+  padding-left: 1%;
+  float: left;
+}
+
+.task-btn {
+  background-color: #fe5722;
+  color: white;
+  margin-top: 5px;
+  margin-right: 420px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+/* Login */
+
+.container {
+  margin: 2% auto;
+  padding: 50px 0;
+  text-align: center;
+  align-items: center;
+  float: left;
+  width: 30%;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+}
+form input {
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #fe5722;
+  font-weight: 300;
+}
+
+form button {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #fe5722;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.right {
+  background-image: url(./Images/Event-Management2.jpg);
+  background-repeat: no-repeat;
+  background-size: 145vh;
+  width: 70%;
+  height: 100vh;
+  float: right;
+}
+
+/* Home */
+
+
+
+/* Events */
+
+
+
+/* Regdump */
+
+.regdump-data {
+  text-align: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: white;
+  height: 100vh;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fe5722;
+  padding-right: 10px;
+}
+
+.form-select {
+  font-size: 15px;
+  width: 300px;
+  padding: 10px 10px;
+}
+
+.RegDumpPartnerSelect {
+  float: left;
+  padding-left: 10%;
+}
+
+.RegDumpEventSelect {
+  float: right;
+  padding-right: 10%;
+}
+
+.regdump-link {
+  font-size: 30px;
+}
+
+/* Registration */
+
+
+
+/* Certificate */
+
+
+
+
+/* Media Querries */
+
+@media (min-width: 505px) and (max-width: 1024px) {
+
+  /* Login */
+
+  .right{
+    display: none;
+    width: 0%;
+    float: none;
+  }
+  form button {
+    padding: 18px 25px;
+    border-radius: 3px;
+    width: 500px;
+    font-size: 27px;
+  }
+
+  form input {
+    width: 500px;
+    padding: 18px 25px;
+    font-size: 27px;
+  }
+
+  .container {
+    float: none;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 505px) {
+
+  /* Login */
+
+  .right{
+    display: none;
+    width: 0%;
+    float: none;
+  }
+
+  .container {
+    float: none;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 175px;
+  }
+}
